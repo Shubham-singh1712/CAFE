@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>CAFÉ AROMA | Premium Coffee & Modern Luxury Dining</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Experience the finest artisanal coffee, delicious gourmet cuisine, and a cozy luxury atmosphere at CAFÉ AROMA. Good Food. Great Coffee. Better Conversations.">
+  <meta name="keywords" content="Cafe Aroma, premium coffee, gourmet dining, bakery, dessert, veg main course, cold brews, Indian menu, luxury cafe, cafe near me">
+  <meta name="author" content="CAFÉ AROMA">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cafearoma.example.com/">
+  <meta property="og:title" content="CAFÉ AROMA | Premium Coffee & Modern Luxury Dining">
+  <meta property="og:description" content="Experience the finest artisanal coffee, delicious gourmet cuisine, and a cozy luxury atmosphere at CAFÉ AROMA.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1507133750040-4a8f57021571?q=80&w=1200&auto=format&fit=crop">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons for Luxury UI Elements -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Sticky Header & Navigation -->
+  <header id="site-header" class="site-header">
+    <div class="nav-container">
+      <a href="#" class="logo-brand">
+        <span class="logo-serif">CAFÉ AROMA</span>
+      </a>
+
+      <!-- Desktop Nav Link Items -->
+      <nav class="desktop-navbar" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#specials" class="nav-link">Specials</a></li>
+          <li><a href="#menu-section" class="nav-link">Menu</a></li>
+          <li><a href="#about" class="nav-link">Our Story</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Nav controls -->
+      <div class="nav-controls">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button id="qr-modal-trigger" class="btn btn-nav-download" aria-label="Download QR Menu">
+          <i class="fa-solid fa-qrcode"></i> <span class="btn-text-desktop">QR Menu</span>
+        </button>
+        <button id="hamburger-menu" class="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu Overlay -->
+  <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+    <div class="drawer-header">
+      <span class="logo-serif">CAFÉ AROMA</span>
+      <button id="drawer-close" class="drawer-close-btn" aria-label="Close menu">&times;</button>
+    </div>
+    <nav class="mobile-nav" aria-label="Mobile Navigation">
+      <ul class="mobile-nav-list">
+        <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+        <li><a href="#specials" class="mobile-nav-link">Featured Specials</a></li>
+        <li><a href="#menu-section" class="mobile-nav-link">Digital Menu</a></li>
+        <li><a href="#about" class="mobile-nav-link">Our Story</a></li>
+        <li><a href="#reviews" class="mobile-nav-link">Reviews</a></li>
+        <li><a href="#gallery" class="mobile-nav-link">Gallery</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact Us</a></li>
+      </ul>
+      <div class="drawer-footer-actions">
+        <button id="mobile-theme-toggle" class="btn btn-secondary btn-full" style="justify-content: center; gap: 8px;">
+          <i class="fa-solid fa-moon"></i> Toggle Dark/Light
+        </button>
+        <button id="mobile-qr-trigger" class="btn btn-accent btn-full" style="justify-content: center; gap: 8px; margin-top: 12px;">
+          <i class="fa-solid fa-qrcode"></i> Get QR Menu
+        </button>
+      </div>
+    </nav>
+  </div>
+  <div id="drawer-overlay" class="drawer-overlay"></div>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-content-container">
+      <div class="hero-text-content">
+        <span class="hero-subtitle fade-in">Welcome to CAFÉ AROMA</span>
+        <h1 class="hero-title fade-in-delay-1">CAFÉ AROMA</h1>
+        <p class="hero-tagline fade-in-delay-2">"Good Food. Great Coffee. Better Conversations."</p>
+        
+        <div class="hero-cta-buttons fade-in-delay-3">
+          <a href="#menu-section" class="btn btn-accent">View Our Menu</a>
+          <a href="#contact" class="btn btn-outline">Order Online</a>
+        </div>
+      </div>
+
+      <!-- Opening Hours Card (Glassmorphic) -->
+      <div class="hero-hours-card glass-card fade-in-delay-4">
+        <h3 class="hours-card-title"><i class="fa-regular fa-clock"></i> Opening Hours</h3>
+        <ul class="hours-list">
+          <li><span>Monday - Friday</span> <span>8:00 AM - 11:00 PM</span></li>
+          <li><span>Saturday - Sunday</span> <span>7:30 AM - Midnight</span></li>
+        </ul>
+        <div class="hours-status-badge open">
+          <span class="status-dot"></span> Open Now
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <a href="#specials" aria-label="Scroll down to featured sections">
+        <i class="fa-solid fa-chevron-down scroll-arrow"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Featured Specials Section -->
+  <section id="specials" class="specials-section">
+    <div class="section-container">
+      <div class="section-header center-align">
+        <span class="section-subtitle">Exquisite Flavors</span>
+        <h2 class="section-title">Chef's Featured Specials</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="specials-grid">
+        <!-- Special Card 1 -->
+        <div class="special-card card-hover-effect">
+          <div class="special-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1541532713592-79a0317b6b77?q=80&w=600&auto=format&fit=crop" alt="Avocado Sourdough Toast" loading="lazy">
+            <span class="card-badge badge-signature">Signature</span>
+          </div>
+          <div class="special-info">
+            <div class="special-header-row">
+              <h3 class="special-name"><span class="badge-veg veg"><i class="fa-solid fa-circle"></i></span> Avocado Toast</h3>
+              <span class="special-price">₹249</span>
+            </div>
+            <p class="special-desc">Freshly mashed avocado on toasted sourdough, topped with organic cherry tomatoes, feta, and extra virgin olive oil drizzle.</p>
+          </div>
+        </div>
+
+        <!-- Special Card 2 -->
+        <div class="special-card card-hover-effect">
+          <div class="special-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?q=80&w=600&auto=format&fit=crop" alt="Signature Cold Brew" loading="lazy">
+            <span class="card-badge badge-popular">Best Seller</span>
+          </div>
+          <div class="special-info">
+            <div class="special-header-row">
+              <h3 class="special-name"><span class="badge-veg veg"><i class="fa-solid fa-circle"></i></span> Cold Brew</h3>
+              <span class="special-price">₹169</span>
+            </div>
+            <p class="special-desc">Artisanal 18-hour cold steeped single-origin Arabica beans, served over block ice with choice of sweetened vanilla sweet cream.</p>
+          </div>
+        </div>
+
+        <!-- Special Card 3 -->
+        <div class="special-card card-hover-effect">
+          <div class="special-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?q=80&w=600&auto=format&fit=crop" alt="Blueberry New York Cheesecake" loading="lazy">
+            <span class="card-badge badge-signature">Chef's Special</span>
+          </div>
+          <div class="special-info">
+            <div class="special-header-row">
+              <h3 class="special-name"><span class="badge-veg veg"><i class="fa-solid fa-circle"></i></span> NY Cheesecake</h3>
+              <span class="special-price">₹249</span>
+            </div>
+            <p class="special-desc">Silky, dense cream cheese filling baked on a golden buttery graham cracker crust, topped with wild blueberry compote.</p>
+          </div>
+        </div>
+
+        <!-- Special Card 4 -->
+        <div class="special-card card-hover-effect">
+          <div class="special-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?q=80&w=600&auto=format&fit=crop" alt="Truffle Parmesan Fries" loading="lazy">
+            <span class="card-badge badge-none">Must Try</span>
+          </div>
+          <div class="special-info">
+            <div class="special-header-row">
+              <h3 class="special-name"><span class="badge-veg veg"><i class="fa-solid fa-circle"></i></span> Truffle Fries</h3>
+              <span class="special-price">₹189</span>
+            </div>
+            <p class="special-desc">Crispy golden fries tossed in aromatic white truffle oil, grated imported parmesan cheese, and fresh micro herbs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Digital Menu Section -->
+  <section id="menu-section" class="menu-section">
+    <div class="section-container">
+      <div class="section-header center-align">
+        <span class="section-subtitle">Freshly Prepared</span>
+        <h2 class="section-title">Digital Dining Menu</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <!-- Search and Filter Bar Wrapper -->
+      <div class="menu-control-panel glass-card">
+        <!-- Search bar -->
+        <div class="menu-search-wrapper">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" id="menu-search-input" class="menu-search-input" placeholder="Search delicious food, coffee, desserts..." aria-label="Search Cafe Menu">
+          <button id="menu-search-clear" class="menu-search-clear" aria-label="Clear Search"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <!-- Scrollable Category Navigation Chips -->
+        <div class="menu-categories-container-scroll">
+          <div class="menu-categories-wrapper" role="tablist" aria-label="Menu Categories">
+            <button class="category-chip active" data-category="all" role="tab" aria-selected="true">All Items</button>
+            <button class="category-chip" data-category="starters" role="tab" aria-selected="false">Starters</button>
+            <button class="category-chip" data-category="chinese" role="tab" aria-selected="false">Chinese</button>
+            <button class="category-chip" data-category="indian" role="tab" aria-selected="false">Indian Main Course</button>
+            <button class="category-chip" data-category="breads" role="tab" aria-selected="false">Breads</button>
+            <button class="category-chip" data-category="rice" role="tab" aria-selected="false">Rice & Biryani</button>
+            <button class="category-chip" data-category="hot-beverages" role="tab" aria-selected="false">Hot Beverages</button>
+            <button class="category-chip" data-category="cold-beverages" role="tab" aria-selected="false">Cold Beverages</button>
+            <button class="category-chip" data-category="desserts" role="tab" aria-selected="false">Desserts</button>
+          </div>
+        </div>
+
+        <!-- Filter Sub-options (Veg/Non-Veg Quick Toggles) -->
+        <div class="dietary-filter-wrapper">
+          <label class="filter-switch-label">
+            <input type="checkbox" id="veg-only-toggle">
+            <span class="custom-switch"></span>
+            <span class="diet-label-text"><i class="fa-solid fa-circle veg-dot"></i> Veg Only</span>
+          </label>
+          <label class="filter-switch-label">
+            <input type="checkbox" id="nonveg-only-toggle">
+            <span class="custom-switch"></span>
+            <span class="diet-label-text"><i class="fa-solid fa-triangle-exclamation nonveg-dot"></i> Non-Veg Only</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Menu Grid Items Container -->
+      <div id="menu-items-grid" class="menu-items-grid">
+        <!-- Rendered Dynamically by app.js -->
+        <div class="menu-loading">
+          <div class="loader-spinner"></div>
+          <p>Brewing menu details...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="about-section">
+    <div class="section-container">
+      <div class="about-grid">
+        <div class="about-img-block">
+          <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?q=80&w=800&auto=format&fit=crop" alt="Cafe Aroma cozy roasting area" class="about-main-img" loading="lazy">
+          <div class="experience-badge glass-card">
+            <span class="exp-number">12</span>
+            <span class="exp-text">Years of Crafting Happiness</span>
+          </div>
+        </div>
+        <div class="about-text-block">
+          <span class="section-subtitle">Our Heritage</span>
+          <h2 class="section-title">Crafting Perfect Cups & Rich Memories</h2>
+          <div class="section-divider-left"></div>
+          <p class="about-paragraph">
+            Founded in 2014, **CAFÉ AROMA** was born out of a simple passion: to brew the ultimate cup of coffee and create a warm sanctuary where people gather, spark ideas, and share meaningful conversations. 
+          </p>
+          <p class="about-paragraph">
+            We source our single-origin, 100% Organic Arabica beans directly from the high-altitude estate farms of Chikmagalur. Every batch is roasted under precision-controlled temperatures by our master roasters, ensuring the complex floral, fruity, and chocolate notes are preserved.
+          </p>
+          
+          <div class="about-features-row">
+            <div class="about-feature-item">
+              <div class="feature-icon-wrapper"><i class="fa-solid fa-mug-hot"></i></div>
+              <h4>Organic Beans</h4>
+              <p>Direct farm sourcing, sustainably roasted.</p>
+            </div>
+            <div class="about-feature-item">
+              <div class="feature-icon-wrapper"><i class="fa-solid fa-user-tie"></i></div>
+              <h4>Expert Baristas</h4>
+              <p>Certified in brewing & latte art precision.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews Section -->
+  <section id="reviews" class="reviews-section">
+    <div class="section-container">
+      <div class="section-header center-align">
+        <span class="section-subtitle">Patron Voices</span>
+        <h2 class="section-title">What Our Guests Say</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <!-- Testimonials container (Grid on Desktop, Swipe Carousel on Mobile) -->
+      <div class="testimonials-slider-container">
+        <div class="testimonials-track" id="testimonials-track">
+          
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card glass-card">
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="review-text">"CAFÉ AROMA has the absolute best cappuccino in the city! The ambiance is incredibly peaceful, and it's my favorite spot for work meetings or reading."</p>
+            <div class="reviewer-meta">
+              <div class="rating-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <h4 class="reviewer-name">Rahul Sharma</h4>
+              <span class="reviewer-title">Tech Consultant</span>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card glass-card">
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="review-text">"The Butter Chicken and garlic naan are outstanding! I didn't expect a cafe to serve such fine Indian courses. Very premium taste and fast service."</p>
+            <div class="reviewer-meta">
+              <div class="rating-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <h4 class="reviewer-name">Priya Patel</h4>
+              <span class="reviewer-title">Food Blogger</span>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card glass-card">
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="review-text">"Absolutely love their cold brew and cheesecakes. The dark mode toggle on their website makes ordering so easy at night. Top marks for branding!"</p>
+            <div class="reviewer-meta">
+              <div class="rating-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <h4 class="reviewer-name">Anish Mehta</h4>
+              <span class="reviewer-title">UI/UX Designer</span>
+            </div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="testimonial-card glass-card">
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="review-text">"Veg Spring Rolls and Crispy Corn are our go-to snacks here. Clean dining tables, polite staff, and an incredibly modern glass design. Highly recommended."</p>
+            <div class="reviewer-meta">
+              <div class="rating-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <h4 class="reviewer-name">Sneha Reddy</h4>
+              <span class="reviewer-title">Professor</span>
+            </div>
+          </div>
+
+          <!-- Testimonial 5 -->
+          <div class="testimonial-card glass-card">
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="review-text">"Their Cold Coffee and Chocolate Lava Cake are simply heavenly. Whenever I feel stressed, a quick trip to Café Aroma brightens up my whole evening!"</p>
+            <div class="reviewer-meta">
+              <div class="rating-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <h4 class="reviewer-name">Kabir Malhotra</h4>
+              <span class="reviewer-title">Creative Director</span>
+            </div>
+          </div>
+
+          <!-- Testimonial 6 -->
+          <div class="testimonial-card glass-card">
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="review-text">"Stunning interior, beautiful music selection, and their Schezwan Noodles have the perfect spice punch. Great digital ordering experience!"</p>
+            <div class="reviewer-meta">
+              <div class="rating-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <h4 class="reviewer-name">Meera Sen</h4>
+              <span class="reviewer-title">Photographer</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Slider Pagination Dots for mobile carousel -->
+        <div class="slider-dots" id="slider-dots">
+          <!-- Dynamically populated by JS or simple static indicators for the 6 cards -->
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+          <span class="dot" data-index="3"></span>
+          <span class="dot" data-index="4"></span>
+          <span class="dot" data-index="5"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section (Masonry layout) -->
+  <section id="gallery" class="gallery-section">
+    <div class="section-container">
+      <div class="section-header center-align">
+        <span class="section-subtitle">Visual Delights</span>
+        <h2 class="section-title">Snapshots of Café Aroma</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Item 1 -->
+        <div class="gallery-item select-zoom" data-image="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=600&auto=format&fit=crop">
+          <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=600&auto=format&fit=crop" alt="Premium Latte Art pouring" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Coffee Art</span>
+            <i class="fa-solid fa-expand zoom-icon"></i>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="gallery-item select-zoom" data-image="https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=600&auto=format&fit=crop">
+          <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=600&auto=format&fit=crop" alt="Luxury Cafe counter layout" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Interior</span>
+            <i class="fa-solid fa-expand zoom-icon"></i>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="gallery-item select-zoom" data-image="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=600&auto=format&fit=crop">
+          <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=600&auto=format&fit=crop" alt="Fresh baked croissants" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Bakery</span>
+            <i class="fa-solid fa-expand zoom-icon"></i>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="gallery-item select-zoom" data-image="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=600&auto=format&fit=crop">
+          <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=600&auto=format&fit=crop" alt="Premium waffle bowl and berries" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Desserts</span>
+            <i class="fa-solid fa-expand zoom-icon"></i>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="gallery-item select-zoom" data-image="https://images.unsplash.com/photo-1510972527409-cef6e4a4d6f2?q=80&w=600&auto=format&fit=crop">
+          <img src="https://images.unsplash.com/photo-1510972527409-cef6e4a4d6f2?q=80&w=600&auto=format&fit=crop" alt="Barista pulling an espresso shot" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Espresso Craft</span>
+            <i class="fa-solid fa-expand zoom-icon"></i>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="gallery-item select-zoom" data-image="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=600&auto=format&fit=crop">
+          <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=600&auto=format&fit=crop" alt="Cafe Aroma guest sitting area" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Cozy Nook</span>
+            <i class="fa-solid fa-expand zoom-icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Location Section -->
+  <section id="contact" class="contact-section">
+    <div class="section-container">
+      <div class="section-header center-align">
+        <span class="section-subtitle">Reach Out</span>
+        <h2 class="section-title">Visit & Connect With Us</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Quick contact widget -->
+        <div class="contact-info-block glass-card">
+          <h3>Get in Touch</h3>
+          <p class="contact-subhead">We'd love to host you. Drop by or reach out through our digital lines.</p>
+          
+          <div class="contact-channels">
+            <div class="channel-card">
+              <div class="channel-icon call"><i class="fa-solid fa-phone"></i></div>
+              <div class="channel-details">
+                <h4>Phone Call</h4>
+                <p>+91 98765 43210</p>
+                <a href="tel:+919876543210" class="btn-channel-action">Call Now</a>
+              </div>
+            </div>
+
+            <div class="channel-card">
+              <div class="channel-icon whatsapp"><i class="fa-brands fa-whatsapp"></i></div>
+              <div class="channel-details">
+                <h4>WhatsApp Chat</h4>
+                <p>+91 98765 43210</p>
+                <a href="https://wa.me/919876543210?text=Hi%20Cafe%20Aroma%2C%20I%20would%20like%20to%20order%20some%20food%21" target="_blank" rel="noopener" class="btn-channel-action">Text Us</a>
+              </div>
+            </div>
+
+            <div class="channel-card">
+              <div class="channel-icon email"><i class="fa-regular fa-envelope"></i></div>
+              <div class="channel-details">
+                <h4>Email Support</h4>
+                <p>hello@cafearoma.com</p>
+                <a href="mailto:hello@cafearoma.com" class="btn-channel-action">Send Email</a>
+              </div>
+            </div>
+
+            <div class="channel-card">
+              <div class="channel-icon address"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="channel-details">
+                <h4>Location Address</h4>
+                <p>12, Park Street, Galleria Block A, Connaught Place, New Delhi - 110001</p>
+                <a href="https://maps.google.com/?q=Connaught+Place+New+Delhi" target="_blank" rel="noopener" class="btn-channel-action">Open in Maps</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Maps Embed Card -->
+        <div class="contact-map-block glass-card">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.9967912445837!2d77.2173167!3d28.6300445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37e2a6d713%3A0x6b772c4e2cfc7a76!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1718873400000!5m2!1sen!2sin" 
+            class="google-map"
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade" 
+            title="Cafe Aroma location map">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="section-container footer-grid">
+      <div class="footer-brand">
+        <span class="logo-serif">CAFÉ AROMA</span>
+        <p class="footer-desc">Experience luxury dining, organic coffee beans, and premium hospitality in a warm, relaxing atmosphere.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://wa.me/919876543210" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#specials">Specials</a></li>
+          <li><a href="#menu-section">Menu</a></li>
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-hours">
+        <h4>Opening Hours</h4>
+        <ul>
+          <li><span>Mon - Fri:</span> <span>8:00 AM - 11:00 PM</span></li>
+          <li><span>Sat - Sun:</span> <span>7:30 AM - Midnight</span></li>
+          <li><span>Delivery Times:</span> <span>11:00 AM - 10:30 PM</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="section-container footer-bottom-flex">
+        <p>&copy; 2026 CAFÉ AROMA. All Rights Reserved. Crafted for food and coffee lovers.</p>
+        <p>
+          <a href="#" class="footer-legal-link">Privacy Policy</a>
+          <span class="divider">|</span>
+          <a href="#" class="footer-legal-link">Terms of Service</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Call & WhatsApp Action Buttons -->
+  <div class="floating-actions-wrapper">
+    <a href="tel:+919876543210" class="floating-btn btn-call" aria-label="Call Cafe Aroma Support">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+    <a href="https://wa.me/919876543210?text=Hello%20Cafe%20Aroma%2C%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener" class="floating-btn btn-whatsapp" aria-label="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- QR Download Modal Overlay -->
+  <div id="qr-modal" class="modal-overlay" aria-hidden="true" role="dialog">
+    <div class="modal-card glass-card">
+      <button id="modal-close" class="modal-close-btn" aria-label="Close QR modal">&times;</button>
+      <div class="modal-body">
+        <div class="qr-icon-circle"><i class="fa-solid fa-qrcode"></i></div>
+        <h3>Scan or Download Digital Menu</h3>
+        <p>Keep a copy of our latest dishes, cold beverages, and premium desserts right on your smartphone.</p>
+        
+        <!-- Simulated High-fidelity SVG QR Code -->
+        <div class="qr-code-placeholder">
+          <svg class="qr-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100" height="100" fill="#ffffff" rx="8"/>
+            <!-- Outline / Corners -->
+            <path d="M10 10h20v5H15v15h-5zm0 80h20v-5H15v-15h-5zm80-80H70v5h15v15h5zm0 80H70v-5h15v-15h5z" fill="#1c110c"/>
+            <!-- Top Left Finder Pattern -->
+            <rect x="15" y="15" width="14" height="14" rx="2" fill="#1c110c"/>
+            <rect x="18" y="18" width="8" height="8" rx="1" fill="#ffffff"/>
+            <rect x="20" y="20" width="4" height="4" fill="#1c110c"/>
+            <!-- Top Right Finder Pattern -->
+            <rect x="71" y="15" width="14" height="14" rx="2" fill="#1c110c"/>
+            <rect x="74" y="18" width="8" height="8" rx="1" fill="#ffffff"/>
+            <rect x="76" y="20" width="4" height="4" fill="#1c110c"/>
+            <!-- Bottom Left Finder Pattern -->
+            <rect x="15" y="71" width="14" height="14" rx="2" fill="#1c110c"/>
+            <rect x="18" y="74" width="8" height="8" rx="1" fill="#ffffff"/>
+            <rect x="20" y="76" width="4" height="4" fill="#1c110c"/>
+            <!-- Dynamic-looking data modules (QR grid) -->
+            <rect x="35" y="15" width="4" height="4" fill="#1c110c"/>
+            <rect x="42" y="15" width="6" height="4" fill="#1c110c"/>
+            <rect x="52" y="15" width="4" height="4" fill="#1c110c"/>
+            <rect x="60" y="15" width="4" height="6" fill="#1c110c"/>
+            <rect x="35" y="24" width="8" height="4" fill="#1c110c"/>
+            <rect x="48" y="24" width="4" height="8" fill="#1c110c"/>
+            <rect x="58" y="24" width="6" height="4" fill="#1c110c"/>
+            <rect x="35" y="32" width="4" height="4" fill="#1c110c"/>
+            <rect x="42" y="36" width="8" height="4" fill="#1c110c"/>
+            <rect x="56" y="34" width="4" height="6" fill="#1c110c"/>
+            <rect x="65" y="32" width="8" height="4" fill="#1c110c"/>
+            <rect x="78" y="32" width="7" height="7" fill="#1c110c"/>
+            
+            <rect x="15" y="38" width="8" height="4" fill="#1c110c"/>
+            <rect x="27" y="38" width="4" height="4" fill="#1c110c"/>
+            <rect x="15" y="46" width="4" height="8" fill="#1c110c"/>
+            <rect x="24" y="46" width="6" height="4" fill="#1c110c"/>
+            
+            <rect x="35" y="46" width="4" height="4" fill="#1c110c"/>
+            <rect x="44" y="46" width="8" height="4" fill="#1c110c"/>
+            <rect x="56" y="46" width="4" height="4" fill="#1c110c"/>
+            <rect x="64" y="46" width="10" height="4" fill="#1c110c"/>
+            <rect x="80" y="46" width="5" height="5" fill="#1c110c"/>
+            
+            <rect x="35" y="55" width="8" height="4" fill="#1c110c"/>
+            <rect x="48" y="55" width="4" height="4" fill="#1c110c"/>
+            <rect x="58" y="55" width="8" height="4" fill="#1c110c"/>
+            <rect x="70" y="55" width="4" height="8" fill="#1c110c"/>
+            <rect x="78" y="55" width="6" height="4" fill="#1c110c"/>
+            
+            <rect x="15" y="58" width="4" height="4" fill="#1c110c"/>
+            <rect x="24" y="58" width="4" height="8" fill="#1c110c"/>
+            
+            <rect x="35" y="65" width="4" height="4" fill="#1c110c"/>
+            <rect x="42" y="65" width="8" height="4" fill="#1c110c"/>
+            <rect x="54" y="65" width="4" height="8" fill="#1c110c"/>
+            <rect x="62" y="65" width="4" height="4" fill="#1c110c"/>
+            <rect x="78" y="65" width="6" height="4" fill="#1c110c"/>
+            
+            <rect x="35" y="75" width="8" height="4" fill="#1c110c"/>
+            <rect x="48" y="75" width="4" height="4" fill="#1c110c"/>
+            <rect x="56" y="75" width="8" height="4" fill="#1c110c"/>
+            <rect x="68" y="75" width="4" height="4" fill="#1c110c"/>
+            <rect x="76" y="75" width="8" height="8" fill="#1c110c"/>
+            
+            <rect x="35" y="83" width="4" height="8" fill="#1c110c"/>
+            <rect x="44" y="83" width="8" height="4" fill="#1c110c"/>
+            <rect x="56" y="83" width="4" height="4" fill="#1c110c"/>
+            <rect x="64" y="83" width="10" height="4" fill="#1c110c"/>
+            
+            <rect x="15" y="66" width="8" height="4" fill="#1c110c"/>
+          </svg>
+        </div>
+
+        <button id="qr-download-btn" class="btn btn-accent btn-full" style="justify-content: center; gap: 8px;">
+          <i class="fa-solid fa-download"></i> Save QR Code
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gallery Lightbox Modal Overlay -->
+  <div id="lightbox-modal" class="modal-overlay" aria-hidden="true">
+    <div class="lightbox-container">
+      <button id="lightbox-close" class="lightbox-close-btn" aria-label="Close Lightbox">&times;</button>
+      <img id="lightbox-img" class="lightbox-img" src="" alt="Zoomed view of gallery image">
+    </div>
+  </div>
+
+  <!-- Custom Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>

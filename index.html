@@ -7,7 +7,7 @@
   
   <!-- SEO Meta Tags -->
   <meta name="description" content="Experience the finest artisanal coffee, delicious gourmet cuisine, and a cozy luxury atmosphere at CAFÉ AROMA. Good Food. Great Coffee. Better Conversations.">
-  <meta name="keywords" content="Cafe Aroma, premium coffee, gourmet dining, bakery, dessert, veg main course, cold brews, Indian menu, luxury cafe, cafe near me">
+  <meta name="keywords" content="Cafe Aroma, premium coffee, gourmet dining, bakery, dessert, veg main course, cold brews, Indian menu, luxury cafe, cafe near me, digital cafe menu">
   <meta name="author" content="CAFÉ AROMA">
   
   <!-- Open Graph / Facebook -->
@@ -16,6 +16,66 @@
   <meta property="og:title" content="CAFÉ AROMA | Premium Coffee & Modern Luxury Dining">
   <meta property="og:description" content="Experience the finest artisanal coffee, delicious gourmet cuisine, and a cozy luxury atmosphere at CAFÉ AROMA.">
   <meta property="og:image" content="https://images.unsplash.com/photo-1507133750040-4a8f57021571?q=80&w=1200&auto=format&fit=crop">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CAFÉ AROMA | Premium Coffee & Modern Luxury Dining">
+  <meta name="twitter:description" content="Experience the finest artisanal coffee, delicious gourmet cuisine, and a cozy luxury atmosphere at CAFÉ AROMA.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1507133750040-4a8f57021571?q=80&w=1200&auto=format&fit=crop">
+
+  <!-- Canonical link -->
+  <link rel="canonical" href="https://cafearoma.example.com/">
+
+  <!-- Local Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "CAFÉ AROMA",
+    "image": "https://images.unsplash.com/photo-1507133750040-4a8f57021571?q=80&w=1200&auto=format&fit=crop",
+    "@id": "https://cafearoma.example.com/",
+    "url": "https://cafearoma.example.com/",
+    "telephone": "+919876543210",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "12, Park Street, Galleria Block A, Connaught Place",
+      "addressLocality": "New Delhi",
+      "postalCode": "110001",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 28.6300445,
+      "longitude": 77.2173167
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "23:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "07:30",
+        "closes": "00:00"
+      }
+    ],
+    "menu": "https://cafearoma.example.com/#/menu",
+    "servesCuisine": ["Cafe", "Coffee", "Bakery", "Desserts", "Indian", "Chinese"]
+  }
+  </script>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,8 +87,19 @@
   
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="styles.css">
+  
+  <!-- Custom Scripts -->
+  <script src="app.js" defer></script>
 </head>
 <body>
+
+  <!-- Dedicated QR Mode Header -->
+  <header class="qr-header">
+    <div class="qr-header-container">
+      <span class="logo-serif">CAFÉ AROMA</span>
+      <span class="qr-header-tagline"><i class="fa-solid fa-utensils"></i> Digital Dining Menu</span>
+    </div>
+  </header>
 
   <!-- Sticky Header & Navigation -->
   <header id="site-header" class="site-header">
@@ -106,7 +177,7 @@
         
         <div class="hero-cta-buttons fade-in-delay-3">
           <a href="#menu-section" class="btn btn-accent">View Our Menu</a>
-          <a href="#contact" class="btn btn-outline">Order Online</a>
+          <a href="https://wa.me/919876543210?text=Hi%20Cafe%20Aroma%2C%20I%20would%20like%20to%20order%20some%20food%21" target="_blank" rel="noopener" class="btn btn-outline"><i class="fa-brands fa-whatsapp"></i> Order on WhatsApp</a>
         </div>
       </div>
 
@@ -126,6 +197,56 @@
       <a href="#specials" aria-label="Scroll down to featured sections">
         <i class="fa-solid fa-chevron-down scroll-arrow"></i>
       </a>
+    </div>
+  </section>
+
+  <!-- Trust Indicators Section (Glassmorphic) -->
+  <section id="trust-section" class="trust-section">
+    <div class="section-container trust-container">
+      <div class="trust-grid">
+        <div class="trust-card glass-card">
+          <div class="trust-icon"><i class="fa-solid fa-star"></i></div>
+          <div class="trust-details">
+            <h3 class="trust-title">⭐ 4.8 Rating</h3>
+            <p class="trust-text">On Google & Zomato</p>
+          </div>
+        </div>
+        <div class="trust-card glass-card">
+          <div class="trust-icon"><i class="fa-solid fa-mug-hot"></i></div>
+          <div class="trust-details">
+            <h3 class="trust-title">☕ Since 2018</h3>
+            <p class="trust-text">Brewing Excellence</p>
+          </div>
+        </div>
+        <div class="trust-card glass-card">
+          <div class="trust-icon"><i class="fa-solid fa-utensils"></i></div>
+          <div class="trust-details">
+            <h3 class="trust-title">🍽 10,000+ Orders</h3>
+            <p class="trust-text">Served with Love</p>
+          </div>
+        </div>
+        <div class="trust-card glass-card">
+          <div class="trust-icon"><i class="fa-solid fa-truck"></i></div>
+          <div class="trust-details">
+            <h3 class="trust-title">🚚 Home Delivery</h3>
+            <p class="trust-text">Available Daily</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Today's Special Section -->
+  <section id="today-special-section" class="today-special-section">
+    <div class="section-container">
+      <div class="section-header center-align">
+        <span class="section-subtitle">🔥 Chef's Selection</span>
+        <h2 class="section-title">Today's Featured Special</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div id="today-special-container">
+        <!-- Rendered dynamically by app.js -->
+      </div>
     </div>
   </section>
 
@@ -220,21 +341,6 @@
           <button id="menu-search-clear" class="menu-search-clear" aria-label="Clear Search"><i class="fa-solid fa-xmark"></i></button>
         </div>
 
-        <!-- Scrollable Category Navigation Chips -->
-        <div class="menu-categories-container-scroll">
-          <div class="menu-categories-wrapper" role="tablist" aria-label="Menu Categories">
-            <button class="category-chip active" data-category="all" role="tab" aria-selected="true">All Items</button>
-            <button class="category-chip" data-category="starters" role="tab" aria-selected="false">Starters</button>
-            <button class="category-chip" data-category="chinese" role="tab" aria-selected="false">Chinese</button>
-            <button class="category-chip" data-category="indian" role="tab" aria-selected="false">Indian Main Course</button>
-            <button class="category-chip" data-category="breads" role="tab" aria-selected="false">Breads</button>
-            <button class="category-chip" data-category="rice" role="tab" aria-selected="false">Rice & Biryani</button>
-            <button class="category-chip" data-category="hot-beverages" role="tab" aria-selected="false">Hot Beverages</button>
-            <button class="category-chip" data-category="cold-beverages" role="tab" aria-selected="false">Cold Beverages</button>
-            <button class="category-chip" data-category="desserts" role="tab" aria-selected="false">Desserts</button>
-          </div>
-        </div>
-
         <!-- Filter Sub-options (Veg/Non-Veg Quick Toggles) -->
         <div class="dietary-filter-wrapper">
           <label class="filter-switch-label">
@@ -247,6 +353,21 @@
             <span class="custom-switch"></span>
             <span class="diet-label-text"><i class="fa-solid fa-triangle-exclamation nonveg-dot"></i> Non-Veg Only</span>
           </label>
+        </div>
+      </div>
+
+      <!-- Scrollable Category Navigation Chips (Extracted for sticky scroll behavior) -->
+      <div class="menu-categories-container-scroll">
+        <div class="menu-categories-wrapper" role="tablist" aria-label="Menu Categories">
+          <button class="category-chip active" data-category="all" role="tab" aria-selected="true">All Items</button>
+          <button class="category-chip" data-category="starters" role="tab" aria-selected="false">Starters</button>
+          <button class="category-chip" data-category="chinese" role="tab" aria-selected="false">Chinese</button>
+          <button class="category-chip" data-category="indian" role="tab" aria-selected="false">Indian Main Course</button>
+          <button class="category-chip" data-category="breads" role="tab" aria-selected="false">Breads</button>
+          <button class="category-chip" data-category="rice" role="tab" aria-selected="false">Rice & Biryani</button>
+          <button class="category-chip" data-category="hot-beverages" role="tab" aria-selected="false">Hot Beverages</button>
+          <button class="category-chip" data-category="cold-beverages" role="tab" aria-selected="false">Cold Beverages</button>
+          <button class="category-chip" data-category="desserts" role="tab" aria-selected="false">Desserts</button>
         </div>
       </div>
 
@@ -698,7 +819,17 @@
     </div>
   </div>
 
-  <!-- Custom Scripts -->
-  <script src="app.js"></script>
+  <!-- Sticky Bottom Mobile Action Bar -->
+  <div class="mobile-action-bar">
+    <a href="tel:+919876543210" class="action-bar-btn call">
+      <i class="fa-solid fa-phone"></i> Call Now
+    </a>
+    <a href="https://wa.me/919876543210?text=Hi%20Cafe%20Aroma%2C%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener" class="action-bar-btn whatsapp">
+      <i class="fa-brands fa-whatsapp"></i> WhatsApp
+    </a>
+    <a href="https://maps.google.com/?q=Connaught+Place+New+Delhi" target="_blank" rel="noopener" class="action-bar-btn directions">
+      <i class="fa-solid fa-location-dot"></i> Directions
+    </a>
+  </div>
 </body>
 </html>

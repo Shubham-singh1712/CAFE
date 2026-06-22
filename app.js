@@ -2,6 +2,26 @@
    CAFÉ AROMA - Interactive Web Engine
    ========================================================================== */
 
+// 0. Central Configurations for Easy Admin Modification
+const CONFIG = {
+  whatsappNumber: "919876543210", // Phone number with country code, no symbols
+  phoneNumber: "+91 98765 43210", // Display format
+  mapsUrl: "https://maps.google.com/?q=Connaught+Place+New+Delhi",
+  facebookUrl: "#",
+  instagramUrl: "#",
+  twitterUrl: "#",
+  emailAddress: "hello@cafearoma.com"
+};
+
+const TODAY_SPECIAL = {
+  name: "Paneer Tikka Roll",
+  price: 199,
+  originalPrice: 249,
+  offerBadge: "20% OFF TODAY",
+  description: "Fresh smoky paneer tikka wrapped in a soft rumali roti with green chutney, crunchy onions, and chat masala.",
+  image: "https://images.unsplash.com/photo-1626132647523-66f5bf380027?q=80&w=600&auto=format&fit=crop"
+};
+
 // 1. Digital Menu Database
 const MENU_DATA = [
   // --- STARTERS ---
@@ -13,7 +33,7 @@ const MENU_DATA = [
     isVeg: true,
     isPopular: false,
     description: "Crispy fried golden wrappers stuffed with spiced shredded vegetables, served with sweet chilli dip.",
-    image: "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=400&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1604328698692-80d9b81baf4d?q=80&w=400&auto=format&fit=crop"
   },
   {
     id: "s2",
@@ -33,7 +53,7 @@ const MENU_DATA = [
     isVeg: true,
     isPopular: false,
     description: "Crisp fried sweet corn kernels tossed with diced onions, green chillies, and aromatic dry spices.",
-    image: "https://images.unsplash.com/photo-1551818255-e6e10975bc17?q=80&w=400&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?q=80&w=400&auto=format&fit=crop"
   },
   {
     id: "s4",
@@ -43,7 +63,7 @@ const MENU_DATA = [
     isVeg: true,
     isPopular: true,
     description: "Crispy french fries tossed in sweet honey, hot chilli paste, and sprinkled with roasted sesame seeds.",
-    image: "https://images.unsplash.com/photo-1518013006369-0268ecf7682f?q=80&w=400&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1580983703451-bf6bb44a9917?q=80&w=400&auto=format&fit=crop"
   },
   {
     id: "s5",
@@ -53,7 +73,7 @@ const MENU_DATA = [
     isVeg: false,
     isPopular: true,
     description: "Frenched chicken wings fried in a spicy red batter, served with spicy Schezwan dipping sauce.",
-    image: "https://images.unsplash.com/photo-1608039829572-78524f79c4c7?q=80&w=400&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1608039829572-f8d0d646ff5f?q=80&w=400&auto=format&fit=crop"
   },
   {
     id: "s6",
@@ -63,7 +83,7 @@ const MENU_DATA = [
     isVeg: false,
     isPopular: false,
     description: "Stir-fried batter coated chicken chunks tossed with bell peppers, green chillies, and soy-garlic glaze.",
-    image: "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?q=80&w=400&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1562967914-608f82629710?q=80&w=400&auto=format&fit=crop"
   },
 
   // --- CHINESE ---
@@ -85,7 +105,7 @@ const MENU_DATA = [
     isVeg: false,
     isPopular: true,
     description: "Classic hakka style noodles stir-fried with egg, tender shredded chicken chunks, and crisp vegetables.",
-    image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?q=80&w=400&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1612927601601-6638404737ce?q=80&w=400&auto=format&fit=crop"
   },
   {
     id: "c3",
@@ -95,7 +115,7 @@ const MENU_DATA = [
     isVeg: true,
     isPopular: false,
     description: "Spicy and fiery wok-tossed noodles flavored with home-style red Schezwan pepper sauce and garlic.",
-    image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?q=80&w=400&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1552611052-33e04de081de?q=80&w=400&auto=format&fit=crop"
   },
   {
     id: "c4",
@@ -105,7 +125,7 @@ const MENU_DATA = [
     isVeg: true,
     isPopular: false,
     description: "Fluffy steamed rice stir-fried in high-flame wok with finely chopped carrots, beans, and spring onion greens.",
-    image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?q=80&w=400&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1645177628172-a94c1f96e6db?q=80&w=400&auto=format&fit=crop"
   },
   {
     id: "c5",
@@ -115,7 +135,7 @@ const MENU_DATA = [
     isVeg: false,
     isPopular: false,
     description: "Aromatic basmati rice stir-fried with diced chicken pieces, eggs, light soy sauce, and white pepper.",
-    image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?q=80&w=400&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=400&auto=format&fit=crop"
   },
   {
     id: "c6",
@@ -125,7 +145,7 @@ const MENU_DATA = [
     isVeg: true,
     isPopular: false,
     description: "Batter-fried paneer cubes submerged in a savory, thick dark soy sauce gravy infused with green chillies.",
-    image: "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?q=80&w=400&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?q=80&w=400&auto=format&fit=crop"
   },
 
   // --- INDIAN MAIN COURSE ---
@@ -147,7 +167,7 @@ const MENU_DATA = [
     isVeg: true,
     isPopular: false,
     description: "Paneer cooked with bell peppers in a freshly ground spicy Kadai masala sauce in traditional wok.",
-    image: "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?q=80&w=400&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1621979087428-ec6e6858a23a?q=80&w=400&auto=format&fit=crop"
   },
   {
     id: "i3",
@@ -177,7 +197,7 @@ const MENU_DATA = [
     isVeg: false,
     isPopular: false,
     description: "Home-style tender chicken pieces cooked with traditional fresh spices in local style thin spicy gravy.",
-    image: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?q=80&w=400&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1618449840665-9ed506d73a34?q=80&w=400&auto=format&fit=crop"
   },
   {
     id: "i6",
@@ -199,7 +219,7 @@ const MENU_DATA = [
     isVeg: true,
     isPopular: false,
     description: "Fluffy leavened flatbread baked in clay oven (tandoor) and generously glazed with pure butter.",
-    image: "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?q=80&w=400&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1626777557463-4491ea40b272?q=80&w=400&auto=format&fit=crop"
   },
   {
     id: "b2",
@@ -209,7 +229,7 @@ const MENU_DATA = [
     isVeg: true,
     isPopular: true,
     description: "Traditional flatbread topped with minced fresh garlic and coriander before baking in clay oven.",
-    image: "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?q=80&w=400&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f3?q=80&w=400&auto=format&fit=crop"
   },
   {
     id: "b3",
@@ -219,7 +239,7 @@ const MENU_DATA = [
     isVeg: true,
     isPopular: false,
     description: "Unleavened whole wheat flatbread baked on the inner walls of charcoal clay tandoor oven.",
-    image: "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?q=80&w=400&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1633933359670-3343167b561c?q=80&w=400&auto=format&fit=crop"
   },
   {
     id: "b4",
@@ -241,7 +261,7 @@ const MENU_DATA = [
     isVeg: true,
     isPopular: false,
     description: "Aromatic Basmati rice tempered with golden cumin seeds (jeera) and butter fat glaze.",
-    image: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=400&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=400&auto=format&fit=crop"
   },
   {
     id: "r2",
@@ -261,7 +281,7 @@ const MENU_DATA = [
     isVeg: false,
     isPopular: true,
     description: "Fragrant basmati rice slow cooked in layers with spiced marinated chicken pieces, fresh mint and saffron.",
-    image: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=400&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=400&auto=format&fit=crop"
   },
   {
     id: "r4",
@@ -271,7 +291,7 @@ const MENU_DATA = [
     isVeg: false,
     isPopular: true,
     description: "Authentic dum style biryani cooked with marinated chicken, premium spices, yogurt base, on heavy low seal flame.",
-    image: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=400&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1633945274405-b6c8069047b0?q=80&w=400&auto=format&fit=crop"
   },
 
   // --- HOT BEVERAGES ---
@@ -447,10 +467,69 @@ const elements = {
 // 4. Initialize Application
 document.addEventListener("DOMContentLoaded", () => {
   initTheme();
+  renderTodaySpecial();
+  handleRouting();
   renderMenu();
   setupEventListeners();
   initTestimonialSlider();
 });
+
+// 4.1 Today's Special Renderer
+function renderTodaySpecial() {
+  const container = document.getElementById("today-special-container");
+  if (!container) return;
+  
+  const discountText = TODAY_SPECIAL.originalPrice 
+    ? `<span class="special-old-price">₹${TODAY_SPECIAL.originalPrice}</span>` 
+    : '';
+    
+  container.innerHTML = `
+    <div class="today-special-card glass-card">
+      <div class="today-special-img-wrapper">
+        <img src="${TODAY_SPECIAL.image}" alt="${TODAY_SPECIAL.name}" loading="lazy">
+        <span class="today-special-offer-badge">${TODAY_SPECIAL.offerBadge}</span>
+      </div>
+      <div class="today-special-info">
+        <span class="today-special-badge-label">🔥 Today's Special</span>
+        <h3 class="today-special-name">${TODAY_SPECIAL.name}</h3>
+        <p class="today-special-desc">${TODAY_SPECIAL.description}</p>
+        <div class="today-special-pricing">
+          <span class="special-new-price">₹${TODAY_SPECIAL.price}</span>
+          ${discountText}
+        </div>
+        <div class="today-special-actions">
+          <a href="https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(
+            `Hi Café Aroma,\n\nI would like to order the Today's Special:\n${TODAY_SPECIAL.name}\n\nPrice: ₹${TODAY_SPECIAL.price}\n\nPlease confirm availability.`
+          )}" target="_blank" rel="noopener" class="btn btn-accent btn-full">
+            <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+// 4.2 QR Menu Router Controller
+function handleRouting() {
+  const isQrMode = 
+    window.location.pathname.endsWith('/menu') || 
+    window.location.pathname.endsWith('/menu.html') ||
+    window.location.hash === '#/menu' || 
+    window.location.search.includes('menu') || 
+    window.location.search.includes('mode=qr');
+  
+  if (isQrMode) {
+    document.body.classList.add("qr-menu-mode");
+    const menuSection = document.getElementById("menu-section");
+    if (menuSection) {
+      setTimeout(() => {
+        menuSection.scrollIntoView({ behavior: "auto", block: "start" });
+      }, 50);
+    }
+  } else {
+    document.body.classList.remove("qr-menu-mode");
+  }
+}
 
 // 5. Theme Settings Controller (Light / Dark Mode)
 function initTheme() {
@@ -556,30 +635,33 @@ function renderMenu() {
     }
 
     elements.menuGrid.innerHTML = filteredList.map(dish => {
-      const vegClass = dish.isVeg ? "badge-veg-only" : "badge-nonveg-only";
-      const vegDot = dish.isVeg ? `<span class="badge-veg veg"><i class="fa-solid fa-circle"></i></span>` : `<span class="badge-nonveg nonveg"></span>`;
-      const popBadge = dish.isPopular ? `<span class="badge-pop-label">Popular</span>` : '';
+      const popularBadge = dish.isPopular 
+        ? `<span class="bestseller-badge"><i class="fa-solid fa-star"></i> Bestseller</span>` 
+        : '';
+      const vegBadge = dish.isVeg 
+        ? `<span class="diet-badge veg"><span class="diet-dot veg-dot"></span> Veg</span>` 
+        : `<span class="diet-badge non-veg"><span class="diet-dot nonveg-dot"></span> Non-Veg</span>`;
       
       return `
-        <article class="dish-card fade-in" data-id="${dish.id}">
+        <article class="dish-card fade-up-card" data-id="${dish.id}">
           <div class="dish-img-wrapper">
             <img src="${dish.image}" alt="${dish.name}" loading="lazy">
-            <div class="dish-badges">
-              <span class="${vegClass}">
-                ${dish.isVeg ? `<span class="badge-veg veg"><i class="fa-solid fa-circle"></i></span>` : `<span class="badge-nonveg nonveg"></span>`}
-              </span>
-              ${popBadge}
-            </div>
+            ${popularBadge}
           </div>
           <div class="dish-info">
-            <div class="dish-name-row">
-              <h3 class="dish-title">${dish.name}</h3>
-              <span class="dish-price">₹${dish.price}</span>
-            </div>
-            <p class="dish-desc">${dish.description}</p>
-            <div class="dish-footer">
+            <div class="dish-meta-row">
               <span class="dish-category-label">${dish.category.replace("-", " ")}</span>
-              <a href="https://wa.me/919876543210?text=Hi%20Cafe%20Aroma%2C%20I%20want%20to%20order%20${encodeURIComponent(dish.name)}%20for%20%E2%82%B9${dish.price}" target="_blank" rel="noopener" class="btn btn-card-order">Order</a>
+              ${vegBadge}
+            </div>
+            <h3 class="dish-title">${dish.name}</h3>
+            <p class="dish-desc">${dish.description}</p>
+            <div class="dish-card-footer">
+              <span class="dish-price">₹${dish.price}</span>
+              <a href="https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(
+                `Hi Café Aroma,\n\nI would like to order:\n${dish.name}\n\nPrice: ₹${dish.price}\n\nPlease confirm availability.`
+              )}" target="_blank" rel="noopener" class="btn btn-card-order-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+              </a>
             </div>
           </div>
         </article>
@@ -840,4 +922,8 @@ function setupEventListeners() {
     }
     renderMenu();
   });
+
+  // Dynamic Routing Listeners
+  window.addEventListener("hashchange", handleRouting);
+  window.addEventListener("popstate", handleRouting);
 }

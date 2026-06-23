@@ -14,11 +14,11 @@ const CONFIG = {
 };
 
 const TODAY_SPECIAL = {
-  name: "Paneer Tikka Roll",
+  name: "Special Pav Bhaji",
   price: 199,
   originalPrice: 249,
   offerBadge: "20% OFF TODAY",
-  description: "Fresh smoky paneer tikka wrapped in a soft rumali roti with green chutney, crunchy onions, and chat masala.",
+  description: "Authentic street-style mashed vegetable curry cooked with a special spice blend and lots of butter, served hot with soft butter-toasted pav buns, sliced onions, and lemon.",
   image: "https://images.unsplash.com/photo-1626132647523-66f5bf380027?q=80&w=600&auto=format&fit=crop"
 };
 

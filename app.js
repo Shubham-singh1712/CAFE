@@ -7,9 +7,9 @@ const CONFIG = {
   whatsappNumber: "919876543210", // Phone number with country code, no symbols
   phoneNumber: "+91 98765 43210", // Display format
   mapsUrl: "https://maps.google.com/?q=Connaught+Place+New+Delhi",
-  facebookUrl: "#",
-  instagramUrl: "#",
-  twitterUrl: "#",
+  facebookUrl: "https://www.facebook.com/cafearoma",
+  instagramUrl: "https://www.instagram.com/cafearoma",
+  twitterUrl: "https://x.com/cafearoma",
   emailAddress: "hello@cafearoma.com"
 };
 
@@ -33,7 +33,7 @@ const MENU_DATA = [
     isVeg: true,
     isPopular: false,
     description: "Crispy fried golden wrappers stuffed with spiced shredded vegetables, served with sweet chilli dip.",
-    image: "https://images.unsplash.com/photo-1604328698692-80d9b81baf4d?q=80&w=400&auto=format&fit=crop"
+    image: "photos/veg%20spring%20rolls.png"
   },
   {
     id: "s2",
@@ -53,7 +53,7 @@ const MENU_DATA = [
     isVeg: true,
     isPopular: false,
     description: "Crisp fried sweet corn kernels tossed with diced onions, green chillies, and aromatic dry spices.",
-    image: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?q=80&w=400&auto=format&fit=crop"
+    image: "photos/crispy%20corn.png"
   },
   {
     id: "s4",
@@ -63,7 +63,7 @@ const MENU_DATA = [
     isVeg: true,
     isPopular: true,
     description: "Crispy french fries tossed in sweet honey, hot chilli paste, and sprinkled with roasted sesame seeds.",
-    image: "https://images.unsplash.com/photo-1580983703451-bf6bb44a9917?q=80&w=400&auto=format&fit=crop"
+    image: "photos/honeychillipotato.png"
   },
   {
     id: "s5",
@@ -73,7 +73,7 @@ const MENU_DATA = [
     isVeg: false,
     isPopular: true,
     description: "Frenched chicken wings fried in a spicy red batter, served with spicy Schezwan dipping sauce.",
-    image: "https://images.unsplash.com/photo-1608039829572-f8d0d646ff5f?q=80&w=400&auto=format&fit=crop"
+    image: "photos/chicken%20lollipop.png"
   },
   {
     id: "s6",
@@ -135,7 +135,7 @@ const MENU_DATA = [
     isVeg: false,
     isPopular: false,
     description: "Aromatic basmati rice stir-fried with diced chicken pieces, eggs, light soy sauce, and white pepper.",
-    image: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=400&auto=format&fit=crop"
+    image: "photos/chicken%20fried%20rice.png"
   },
   {
     id: "c6",
@@ -145,7 +145,7 @@ const MENU_DATA = [
     isVeg: true,
     isPopular: false,
     description: "Batter-fried paneer cubes submerged in a savory, thick dark soy sauce gravy infused with green chillies.",
-    image: "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?q=80&w=400&auto=format&fit=crop"
+    image: "photos/paneer%20chilly.png"
   },
 
   // --- INDIAN MAIN COURSE ---
@@ -167,7 +167,7 @@ const MENU_DATA = [
     isVeg: true,
     isPopular: false,
     description: "Paneer cooked with bell peppers in a freshly ground spicy Kadai masala sauce in traditional wok.",
-    image: "https://images.unsplash.com/photo-1621979087428-ec6e6858a23a?q=80&w=400&auto=format&fit=crop"
+    image: "photos/kadai%20paneer.png"
   },
   {
     id: "i3",
@@ -177,7 +177,7 @@ const MENU_DATA = [
     isVeg: true,
     isPopular: true,
     description: "Black lentils simmered overnight on slow charcoal fire with butter and cream for an authentic rich texture.",
-    image: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?q=80&w=400&auto=format&fit=crop"
+    image: "photos/dal%20makhani.png"
   },
   {
     id: "i4",
@@ -206,8 +206,8 @@ const MENU_DATA = [
     category: "indian",
     isVeg: false,
     isPopular: true,
-    description: "Kashmiri style aromatic slow-cooked mutton curry featuring rich red chilli oil extract and fine spices.",
-    image: "https://images.unsplash.com/photo-1547825407-2d060104b7f8?q=80&w=400&auto=format&fit=crop"
+    description: "Kashmiri style slow-cooked mutton curry featuring rich red chilli oil extract and fine spices.",
+    image: "photos/muttonrogan%20josh.png"
   },
 
   // --- BREADS ---
@@ -219,7 +219,7 @@ const MENU_DATA = [
     isVeg: true,
     isPopular: false,
     description: "Fluffy leavened flatbread baked in clay oven (tandoor) and generously glazed with pure butter.",
-    image: "https://images.unsplash.com/photo-1626777557463-4491ea40b272?q=80&w=400&auto=format&fit=crop"
+    image: "photos/butter%20naan.png"
   },
   {
     id: "b2",
@@ -229,7 +229,7 @@ const MENU_DATA = [
     isVeg: true,
     isPopular: true,
     description: "Traditional flatbread topped with minced fresh garlic and coriander before baking in clay oven.",
-    image: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f3?q=80&w=400&auto=format&fit=crop"
+    image: "photos/garlic%20naan.png"
   },
   {
     id: "b3",
@@ -239,7 +239,7 @@ const MENU_DATA = [
     isVeg: true,
     isPopular: false,
     description: "Unleavened whole wheat flatbread baked on the inner walls of charcoal clay tandoor oven.",
-    image: "https://images.unsplash.com/photo-1633933359670-3343167b561c?q=80&w=400&auto=format&fit=crop"
+    image: "photos/tandoori%20roti.png"
   },
   {
     id: "b4",
@@ -249,7 +249,7 @@ const MENU_DATA = [
     isVeg: true,
     isPopular: false,
     description: "Multi-layered flaky whole wheat flatbread brushed with butter, cooked to golden brown finish.",
-    image: "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?q=80&w=400&auto=format&fit=crop"
+    image: "photos/laccha%20paratha.png"
   },
 
   // --- RICE AND BIRYANI ---
@@ -261,7 +261,7 @@ const MENU_DATA = [
     isVeg: true,
     isPopular: false,
     description: "Aromatic Basmati rice tempered with golden cumin seeds (jeera) and butter fat glaze.",
-    image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=400&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1596790068538-2f0f6c41ca9c?q=80&w=400&auto=format&fit=crop"
   },
   {
     id: "r2",
@@ -271,7 +271,7 @@ const MENU_DATA = [
     isVeg: true,
     isPopular: false,
     description: "Layered mix of aromatic long-grain basmati rice, seasonal fresh vegetables, saffron water and herbs.",
-    image: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=400&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?q=80&w=400&auto=format&fit=crop"
   },
   {
     id: "r3",
@@ -281,7 +281,7 @@ const MENU_DATA = [
     isVeg: false,
     isPopular: true,
     description: "Fragrant basmati rice slow cooked in layers with spiced marinated chicken pieces, fresh mint and saffron.",
-    image: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=400&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=400&auto=format&fit=crop"
   },
   {
     id: "r4",
@@ -291,7 +291,7 @@ const MENU_DATA = [
     isVeg: false,
     isPopular: true,
     description: "Authentic dum style biryani cooked with marinated chicken, premium spices, yogurt base, on heavy low seal flame.",
-    image: "https://images.unsplash.com/photo-1633945274405-b6c8069047b0?q=80&w=400&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=400&auto=format&fit=crop"
   },
 
   // --- HOT BEVERAGES ---
@@ -407,7 +407,7 @@ const MENU_DATA = [
     isVeg: true,
     isPopular: false,
     description: "Classic smooth cream cheese baked slice on crumbly crust base, glazed with raspberry syrup finish.",
-    image: "https://images.unsplash.com/photo-1524351199679-46cddf530c04?q=80&w=400&auto=format&fit=crop"
+    image: "photos/cheese%20slicecake.png"
   },
   {
     id: "de4",
@@ -417,7 +417,7 @@ const MENU_DATA = [
     isVeg: true,
     isPopular: false,
     description: "Traditional hot round milk dumplings fried and soaked in sweet cardamom-rosewater flavored syrup.",
-    image: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?q=80&w=400&auto=format&fit=crop"
+    image: "photos/gulab%20jamun.png"
   }
 ];
 
@@ -427,52 +427,60 @@ let searchFilterQuery = "";
 let isVegOnly = false;
 let isNonVegOnly = false;
 
-// 3. Document Elements Selection
+// 3. Document Elements Selection using Getters to prevent null elements issues on early script loads
 const elements = {
-  header: document.getElementById("site-header"),
-  themeToggle: document.getElementById("theme-toggle"),
-  mobileThemeToggle: document.getElementById("mobile-theme-toggle"),
-  hamburgerMenu: document.getElementById("hamburger-menu"),
-  mobileDrawer: document.getElementById("mobile-drawer"),
-  drawerClose: document.getElementById("drawer-close"),
-  drawerOverlay: document.getElementById("drawer-overlay"),
-  mobileNavLinks: document.querySelectorAll(".mobile-nav-link"),
+  get header() { return document.getElementById("site-header"); },
+  get themeToggle() { return document.getElementById("theme-toggle"); },
+  get mobileThemeToggle() { return document.getElementById("mobile-theme-toggle"); },
+  get hamburgerMenu() { return document.getElementById("hamburger-menu"); },
+  get mobileDrawer() { return document.getElementById("mobile-drawer"); },
+  get drawerClose() { return document.getElementById("drawer-close"); },
+  get drawerOverlay() { return document.getElementById("drawer-overlay"); },
+  get mobileNavLinks() { return document.querySelectorAll(".mobile-nav-link"); },
   
   // Menu items components
-  menuGrid: document.getElementById("menu-items-grid"),
-  searchInput: document.getElementById("menu-search-input"),
-  searchClear: document.getElementById("menu-search-clear"),
-  categoryChips: document.querySelectorAll(".category-chip"),
-  vegToggle: document.getElementById("veg-only-toggle"),
-  nonVegToggle: document.getElementById("nonveg-only-toggle"),
+  get menuGrid() { return document.getElementById("menu-items-grid"); },
+  get searchInput() { return document.getElementById("menu-search-input"); },
+  get searchClear() { return document.getElementById("menu-search-clear"); },
+  get categoryChips() { return document.querySelectorAll(".category-chip"); },
+  get vegToggle() { return document.getElementById("veg-only-toggle"); },
+  get nonVegToggle() { return document.getElementById("nonveg-only-toggle"); },
 
   // Modals
-  qrModal: document.getElementById("qr-modal"),
-  qrTrigger: document.getElementById("qr-modal-trigger"),
-  mobileQrTrigger: document.getElementById("mobile-qr-trigger"),
-  qrClose: document.getElementById("modal-close"),
-  qrDownloadBtn: document.getElementById("qr-download-btn"),
+  get qrModal() { return document.getElementById("qr-modal"); },
+  get qrTrigger() { return document.getElementById("qr-modal-trigger"); },
+  get mobileQrTrigger() { return document.getElementById("mobile-qr-trigger"); },
+  get qrClose() { return document.getElementById("modal-close"); },
+  get qrDownloadBtn() { return document.getElementById("qr-download-btn"); },
 
   // Testimonials Carousel
-  track: document.getElementById("testimonials-track"),
-  dots: document.querySelectorAll(".slider-dots .dot"),
+  get track() { return document.getElementById("testimonials-track"); },
+  get dots() { return document.querySelectorAll(".slider-dots .dot"); },
 
   // Lightbox Modal
-  lightbox: document.getElementById("lightbox-modal"),
-  lightboxImg: document.getElementById("lightbox-img"),
-  lightboxClose: document.getElementById("lightbox-close"),
-  galleryItems: document.querySelectorAll(".select-zoom")
+  get lightbox() { return document.getElementById("lightbox-modal"); },
+  get lightboxImg() { return document.getElementById("lightbox-img"); },
+  get lightboxClose() { return document.getElementById("lightbox-close"); },
+  get galleryItems() { return document.querySelectorAll(".select-zoom"); }
 };
 
 // 4. Initialize Application
-document.addEventListener("DOMContentLoaded", () => {
+function init() {
   initTheme();
   renderTodaySpecial();
   handleRouting();
   renderMenu();
   setupEventListeners();
   initTestimonialSlider();
-});
+  populateSocialLinks();
+  initQrCode();
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", init);
+} else {
+  init();
+}
 
 // 4.1 Today's Special Renderer
 function renderTodaySpecial() {
@@ -533,7 +541,12 @@ function handleRouting() {
 
 // 5. Theme Settings Controller (Light / Dark Mode)
 function initTheme() {
-  const savedTheme = localStorage.getItem("cafe-aroma-theme");
+  let savedTheme = null;
+  try {
+    savedTheme = localStorage.getItem("cafe-aroma-theme");
+  } catch (e) {
+    console.warn("localStorage is not accessible in this environment:", e);
+  }
   const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   
   if (savedTheme === "dark" || (!savedTheme && systemPrefersDark)) {
@@ -547,7 +560,11 @@ function initTheme() {
 
 function toggleTheme() {
   const isDark = document.body.classList.toggle("dark-theme");
-  localStorage.setItem("cafe-aroma-theme", isDark ? "dark" : "light");
+  try {
+    localStorage.setItem("cafe-aroma-theme", isDark ? "dark" : "light");
+  } catch (e) {
+    console.warn("localStorage is not accessible in this environment:", e);
+  }
   updateThemeIcons(isDark);
   
   // Add quick micro-animation feedback
@@ -755,22 +772,76 @@ function closeQrModal() {
   document.body.style.overflow = "";
 }
 
+// 9.1 Dynamic Social Links Wiring
+function populateSocialLinks() {
+  const footerSocials = document.querySelectorAll(".social-links a");
+  footerSocials.forEach(link => {
+    const label = link.getAttribute("aria-label");
+    if (label === "Instagram") link.href = CONFIG.instagramUrl;
+    if (label === "Facebook") link.href = CONFIG.facebookUrl;
+    if (label === "Twitter") link.href = CONFIG.twitterUrl;
+    if (label === "WhatsApp") link.href = `https://wa.me/${CONFIG.whatsappNumber}`;
+  });
+}
+
+// 9.2 QR Code Dynamic Generator
+let qrCodeInstance = null;
+function initQrCode() {
+  const qrContainer = document.getElementById("qrcode");
+  if (!qrContainer) return;
+  
+  // Clear any existing content in the QR container
+  qrContainer.innerHTML = "";
+  
+  // Create menu section target URL
+  const menuUrl = window.location.href.split('?')[0].split('#')[0] + "?mode=qr";
+  
+  try {
+    qrCodeInstance = new QRCode(qrContainer, {
+      text: menuUrl,
+      width: 156,
+      height: 156,
+      colorDark: "#1c110c",
+      colorLight: "#ffffff",
+      correctLevel: QRCode.CorrectLevel.H
+    });
+  } catch (e) {
+    console.error("Could not generate QR Code dynamically:", e);
+  }
+}
+
 function handleQrDownload() {
-  // Simulating download of digital PDF menu
-  const link = document.createElement("a");
-  link.href = "#";
-  link.download = "Cafe-Aroma-Digital-Menu.pdf";
+  const qrImg = document.querySelector("#qrcode img");
+  const qrCanvas = document.querySelector("#qrcode canvas");
+  let downloadUrl = "";
   
-  // Show notification simulation
-  const originalText = elements.qrDownloadBtn.innerHTML;
-  elements.qrDownloadBtn.innerHTML = `<i class="fa-solid fa-check"></i> Menu PDF Saved!`;
-  elements.qrDownloadBtn.style.backgroundColor = "#22C55E";
+  if (qrImg && qrImg.src) {
+    downloadUrl = qrImg.src;
+  } else if (qrCanvas) {
+    downloadUrl = qrCanvas.toDataURL("image/png");
+  }
   
-  setTimeout(() => {
-    elements.qrDownloadBtn.innerHTML = originalText;
-    elements.qrDownloadBtn.style.backgroundColor = "";
-    closeQrModal();
-  }, 1500);
+  if (downloadUrl) {
+    const link = document.createElement("a");
+    link.href = downloadUrl;
+    link.download = "Cafe-Aroma-QR-Menu.png";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    
+    // Show success visual feedback
+    const originalText = elements.qrDownloadBtn.innerHTML;
+    elements.qrDownloadBtn.innerHTML = `<i class="fa-solid fa-check"></i> QR Code Saved!`;
+    elements.qrDownloadBtn.style.backgroundColor = "#22C55E";
+    
+    setTimeout(() => {
+      elements.qrDownloadBtn.innerHTML = originalText;
+      elements.qrDownloadBtn.style.backgroundColor = "";
+      closeQrModal();
+    }, 1500);
+  } else {
+    console.warn("QR Code is not ready or has not been generated.");
+  }
 }
 
 // 10. Image Gallery Lightbox Modal

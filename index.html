@@ -88,6 +88,9 @@
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="styles.css">
   
+  <!-- QR Code Generator Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
+  
   <!-- Custom Scripts -->
   <script src="app.js" defer></script>
 </head>
@@ -214,7 +217,7 @@
         <div class="trust-card glass-card">
           <div class="trust-icon"><i class="fa-solid fa-mug-hot"></i></div>
           <div class="trust-details">
-            <h3 class="trust-title">☕ Since 2018</h3>
+            <h3 class="trust-title">☕ Since 2014</h3>
             <p class="trust-text">Brewing Excellence</p>
           </div>
         </div>
@@ -672,10 +675,10 @@
         <span class="logo-serif">CAFÉ AROMA</span>
         <p class="footer-desc">Experience luxury dining, organic coffee beans, and premium hospitality in a warm, relaxing atmosphere.</p>
         <div class="social-links">
-          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="https://wa.me/919876543210" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/cafearoma" aria-label="Instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/cafearoma" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://x.com/cafearoma" aria-label="Twitter" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://wa.me/919876543210" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
       </div>
 
@@ -731,78 +734,8 @@
         <h3>Scan or Download Digital Menu</h3>
         <p>Keep a copy of our latest dishes, cold beverages, and premium desserts right on your smartphone.</p>
         
-        <!-- Simulated High-fidelity SVG QR Code -->
-        <div class="qr-code-placeholder">
-          <svg class="qr-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <rect width="100" height="100" fill="#ffffff" rx="8"/>
-            <!-- Outline / Corners -->
-            <path d="M10 10h20v5H15v15h-5zm0 80h20v-5H15v-15h-5zm80-80H70v5h15v15h5zm0 80H70v-5h15v-15h5z" fill="#1c110c"/>
-            <!-- Top Left Finder Pattern -->
-            <rect x="15" y="15" width="14" height="14" rx="2" fill="#1c110c"/>
-            <rect x="18" y="18" width="8" height="8" rx="1" fill="#ffffff"/>
-            <rect x="20" y="20" width="4" height="4" fill="#1c110c"/>
-            <!-- Top Right Finder Pattern -->
-            <rect x="71" y="15" width="14" height="14" rx="2" fill="#1c110c"/>
-            <rect x="74" y="18" width="8" height="8" rx="1" fill="#ffffff"/>
-            <rect x="76" y="20" width="4" height="4" fill="#1c110c"/>
-            <!-- Bottom Left Finder Pattern -->
-            <rect x="15" y="71" width="14" height="14" rx="2" fill="#1c110c"/>
-            <rect x="18" y="74" width="8" height="8" rx="1" fill="#ffffff"/>
-            <rect x="20" y="76" width="4" height="4" fill="#1c110c"/>
-            <!-- Dynamic-looking data modules (QR grid) -->
-            <rect x="35" y="15" width="4" height="4" fill="#1c110c"/>
-            <rect x="42" y="15" width="6" height="4" fill="#1c110c"/>
-            <rect x="52" y="15" width="4" height="4" fill="#1c110c"/>
-            <rect x="60" y="15" width="4" height="6" fill="#1c110c"/>
-            <rect x="35" y="24" width="8" height="4" fill="#1c110c"/>
-            <rect x="48" y="24" width="4" height="8" fill="#1c110c"/>
-            <rect x="58" y="24" width="6" height="4" fill="#1c110c"/>
-            <rect x="35" y="32" width="4" height="4" fill="#1c110c"/>
-            <rect x="42" y="36" width="8" height="4" fill="#1c110c"/>
-            <rect x="56" y="34" width="4" height="6" fill="#1c110c"/>
-            <rect x="65" y="32" width="8" height="4" fill="#1c110c"/>
-            <rect x="78" y="32" width="7" height="7" fill="#1c110c"/>
-            
-            <rect x="15" y="38" width="8" height="4" fill="#1c110c"/>
-            <rect x="27" y="38" width="4" height="4" fill="#1c110c"/>
-            <rect x="15" y="46" width="4" height="8" fill="#1c110c"/>
-            <rect x="24" y="46" width="6" height="4" fill="#1c110c"/>
-            
-            <rect x="35" y="46" width="4" height="4" fill="#1c110c"/>
-            <rect x="44" y="46" width="8" height="4" fill="#1c110c"/>
-            <rect x="56" y="46" width="4" height="4" fill="#1c110c"/>
-            <rect x="64" y="46" width="10" height="4" fill="#1c110c"/>
-            <rect x="80" y="46" width="5" height="5" fill="#1c110c"/>
-            
-            <rect x="35" y="55" width="8" height="4" fill="#1c110c"/>
-            <rect x="48" y="55" width="4" height="4" fill="#1c110c"/>
-            <rect x="58" y="55" width="8" height="4" fill="#1c110c"/>
-            <rect x="70" y="55" width="4" height="8" fill="#1c110c"/>
-            <rect x="78" y="55" width="6" height="4" fill="#1c110c"/>
-            
-            <rect x="15" y="58" width="4" height="4" fill="#1c110c"/>
-            <rect x="24" y="58" width="4" height="8" fill="#1c110c"/>
-            
-            <rect x="35" y="65" width="4" height="4" fill="#1c110c"/>
-            <rect x="42" y="65" width="8" height="4" fill="#1c110c"/>
-            <rect x="54" y="65" width="4" height="8" fill="#1c110c"/>
-            <rect x="62" y="65" width="4" height="4" fill="#1c110c"/>
-            <rect x="78" y="65" width="6" height="4" fill="#1c110c"/>
-            
-            <rect x="35" y="75" width="8" height="4" fill="#1c110c"/>
-            <rect x="48" y="75" width="4" height="4" fill="#1c110c"/>
-            <rect x="56" y="75" width="8" height="4" fill="#1c110c"/>
-            <rect x="68" y="75" width="4" height="4" fill="#1c110c"/>
-            <rect x="76" y="75" width="8" height="8" fill="#1c110c"/>
-            
-            <rect x="35" y="83" width="4" height="8" fill="#1c110c"/>
-            <rect x="44" y="83" width="8" height="4" fill="#1c110c"/>
-            <rect x="56" y="83" width="4" height="4" fill="#1c110c"/>
-            <rect x="64" y="83" width="10" height="4" fill="#1c110c"/>
-            
-            <rect x="15" y="66" width="8" height="4" fill="#1c110c"/>
-          </svg>
-        </div>
+        <!-- Dynamic Scannable QR Code -->
+        <div id="qrcode" class="qr-code-placeholder"></div>
 
         <button id="qr-download-btn" class="btn btn-accent btn-full" style="justify-content: center; gap: 8px;">
           <i class="fa-solid fa-download"></i> Save QR Code
